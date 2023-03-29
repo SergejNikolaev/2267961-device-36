@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [сергей николаев](https://up.htmlacademy.ru/htmlcss/36/user/2267961).
-* Наставник: `Неизвестно`.
+- Студент: [сергей николаев](https://up.htmlacademy.ru/htmlcss/36/user/2267961).
+- Наставник: [Артем Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
