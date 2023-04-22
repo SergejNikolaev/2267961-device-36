@@ -7,60 +7,102 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="navigation">
           <a class="navigation-link-logo" href="#">
             <img
-              class="device-logo"
+              class="device_logo logo"
               src="images/logo.jpg"
               alt="device"
               width="145px"
               height="36px"
             />
           </a>
-          <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <input
-              class="form-search"
-              type="search"
-              name="search"
-              id="search"
-              placeholder="Поиск по сайту"
-              required
-            />
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <button class="form-button-search" type="submit">Найти</button>
-          </form>
-          <ul class="navigation-item">
-            <li class="navigation-list"><a href="#">Войти</a></li>
-          </ul>
-          <ul class="navigation-user-item">
-            <li class="navigation-user-list"><a href="#">Сравнить</a></li>
-          </ul>
-          <ul class="navigation-user-item">
-            <li class="navigation-user-list"><a href="#">Корзина</a></li>
-          </ul>
+          <div class="navigation_container">
+            <form
+              class="form"
+              action="https://echo.htmlacademy.ru"
+              method="post"
+            >
+              <div class="form-search-wrapper">
+                <input
+                  class="form-search"
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Поиск по сайту"
+                  required
+                />
+              </div>
+
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <button class="form-button-search" type="submit">Найти</button>
+            </form>
+            <ul class="navigation-item">
+              <li class="navigation-list"><a href="#">Войти</a></li>
+            </ul>
+
+            <ul class="navigation-user-item user-item">
+              <li class="navigation-user-list">
+                <svg
+                  class="svg"
+                  width="10"
+                  height="12"
+                  viewBox="0 0 10 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H4V12H6V0Z" fill="black" />
+                  <path d="M2 4H0V12H2V4Z" fill="black" />
+                  <path d="M10 3H8V12H10V3Z" fill="black" /></svg
+                ><a href="#">Сравнить</a>
+              </li>
+              <li class="navigation-user-list user-list">
+                <svg
+                  class="user-list-svg"
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"
+                    fill="black"
+                  />
+                </svg>
+                <span class="number">2</span>
+                <a class="user-list-link" href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+
           <ul class="catalog">
             <li class="catalog-item">
               <a href="#">каталог товаров</a>
-              <ul class="subcatalog">
-                <li class="subcatalog-list">
-                  <a href="#">Виртуальная реальность</a>
-                </li>
-                <li class="subcatalog-list">
-                  <a href="#">Моноподы для селфи</a>
-                </li>
-                <li class="subcatalog-list">
-                  <a href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="subcatalog">
-                <li class="subcatalog-list"><a href="#">Фитнес-браслеты</a></li>
-                <li class="subcatalog-list"><a href="#">Умные часы</a></li>
-              </ul>
-              <ul class="subcatalog">
-                <li class="subcatalog-list"><a href="#">Квадракоптеры</a></li>
-              </ul>
+              <div class="subcatalog_wrapper">
+                <ul class="subcatalog">
+                  <li class="subcatalog-list">
+                    <a href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="subcatalog-list">
+                    <a href="#">Моноподы для селфи</a>
+                  </li>
+                  <li class="subcatalog-list">
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="subcatalog">
+                  <li class="subcatalog-list">
+                    <a href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="subcatalog-list"><a href="#">Умные часы</a></li>
+                </ul>
+                <ul class="subcatalog">
+                  <li class="subcatalog-list"><a href="#">Квадракоптеры</a></li>
+                </ul>
+              </div>
             </li>
             <li class="catalog-item"><a href="#">доставка</a></li>
             <li class="catalog-item"><a href="#">гарантия</a></li>
@@ -69,7 +111,34 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main class="main">
+      <h1 class="visually-hidden">Магазин товаров Девайс</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <img
+          src="images/slider-1.jpg"
+          alt="Квадракоптер"
+          width="560px"
+          height="560px"
+        />
+        <h3 class="popular__title">Порхает как бабочка, жалит как пчела!</h3>
+        <p class="popular__description">
+          Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+          замаскированным под стандартную камеру.
+        </p>
+        <a href="#" class="popular__link btn_yellow">подробнее</a>
+        <table class="popular__table">
+          <tr>
+            <th>800 м</th>
+            <th>50 м</th>
+          </tr>
+          <tr>
+            <td>Дальность полета</td>
+            <td>Радиус поражения</td>
+          </tr>
+        </table>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

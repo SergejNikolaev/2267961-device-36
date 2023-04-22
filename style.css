@@ -45,4 +45,128 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  color: #444444;
+  min-width: 1160px;
+  margin: 0;
+}
+.catalog-item:focus-within .subcatalog {
+  display: block;
+}
+
+.subcatalog {
+  display: none;
+}
+.subcatalog_wrapper {
+  display: flex;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 60px;
+  background-color: #ffe17f;
+}
+.logo {
+  display: block;
+}
+.device_logo {
+  margin-bottom: 30px;
+}
+
+.navigation_container {
+  display: flex;
+}
+
+.navigation-user-item {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 310px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.form {
+  display: flex;
+}
+.form-search {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 40px;
+  min-width: 359px;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  background-color: #ffe17f;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+.form-search-wrapper {
+  position: relative;
+}
+.form-search-wrapper::after {
+  position: absolute;
+  background-image: url(images/Vector.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 16px;
+  top: 12px;
+}
+.form-button-search {
+  min-height: 40px;
+  min-width: 160px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
+  background-color: #ffe17f;
+}
+.navigation-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 231px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 26px;
+  margin-right: 26px;
+}
+.navigation-item {
+  position: relative;
+}
+.navigation-item::after {
+  position: absolute;
+  background-image: url(images/vector-1.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 13px;
+  height: 12px;
+  left: 13px;
+}
+.user-list {
+  padding-left: 50px;
+}
+.svg {
+  padding-right: 12px;
+}
+.user-list-svg {
+  padding-right: 12px;
+}
+.number {
+  position: absolute;
+  background-color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17px;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  border-radius: 50%;
+  right: 95px;
+  top: 5px;
+}
+.user-list {
+  position: relative;
 }
